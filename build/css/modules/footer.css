@@ -1,0 +1,118 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 133px;
+  background-color: #EEE7DA;
+  border-top: 0.5px solid #594C42;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__subscription {
+  margin-top: -113px;
+  margin-bottom: 56px;
+  max-width: 1365px;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #AFC8AD;
+  border-radius: 12px;
+}
+.footer__subscr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 81px;
+}
+.footer__subscr-text {
+  max-width: 772px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 300;
+  line-height: 1.4;
+  letter-spacing: 0.96px;
+}
+.footer__subscr-btn {
+  padding: 18px;
+  max-width: 389px;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.66px;
+  border: 3px solid #88AB8E;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.footer__slogan {
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 400;
+}
+.footer__info {
+  display: flex;
+  gap: 150px;
+}
+.footer__text-inf {
+  max-width: 506px;
+}
+.footer__text-inf p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #000;
+  line-height: 1.5;
+  letter-spacing: 0.54px;
+}
+.footer__social {
+  display: flex;
+  gap: 40px;
+}
+.footer__text-headline {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.footer__menu-headline {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__menu-item a {
+  font-size: 18px;
+  font-weight: 300;
+}
+.footer__contacts-headline {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.footer__contacts-list {
+  max-width: 368px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer__contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 18px;
+}
+.footer__contacts-item a {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 18px;
+}

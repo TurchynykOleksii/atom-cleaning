@@ -1,0 +1,26 @@
+.header {
+  background-color: #F2F1EB;
+  border-bottom: 0.5px solid #594C42;
+}
+.header__inner {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+.header__item a {
+  font-size: 34px;
+}
+.header__phone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header__phone span {
+  font-size: 34px;
+}

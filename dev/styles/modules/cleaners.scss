@@ -1,0 +1,49 @@
+@import "../core";
+
+.cleaners {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__info {
+    max-width: 485px;
+    padding: 130px 20px 45px;
+    border-radius: 30px;
+    background-color: $colorAccent;
+
+    p {
+      font-size: 23px;
+      font-weight: 300;
+      letter-spacing: 0.96px;
+      line-height: 1.4;
+    }
+  }
+
+  &__headline {
+    margin-bottom: 28px;
+    font-size: 50px;
+    font-weight: 400;
+    color: $colorGray;
+    line-height: 1;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  &__item {
+    border-radius: 40px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,6 @@
+@import "vars";
+
+@function rem($value) {
+	$remValue: calc($value / 10)+rem;
+	@return $remValue;
+}

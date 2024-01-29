@@ -1,0 +1,70 @@
+@import "vars";
+
+@mixin size($a, $b: $a) {
+  width: $a;
+  height: $b;
+}
+
+@mixin maxw($media) {
+  @media only screen and (max-width: $media) {
+    @content;
+  }
+}
+
+@mixin minw($media) {
+  @media only screen and (min-width: $media) {
+    @content;
+  }
+}
+
+@mixin minh($media) {
+  @media only screen and (min-height: $media) {
+    @content;
+  }
+}
+
+@mixin maxh($media) {
+  @media only screen and (max-height: $media) {
+    @content;
+  }
+}
+
+// Image replacement
+@mixin hide-text {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+
+
+// Адаптивное свойство
+@mixin adaptiv-value ($property, $startSize, $minSize, $type) {
+  $addSize: $startSize - $minSize;
+
+  @if $type==1 {
+    //Только если меньше контейнера
+    #{$property}: $startSize + px;
+
+    @media (max-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidthContainer - 375}));
+    }
+  }
+
+  @else if $type==2 {
+    //Только если больше контейнера
+    #{$property}: $startSize + px;
+
+    @media (min-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth - 375}));
+    }
+  }
+
+  @else {
+    //Всегда
+    #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth - 375}));
+  }
+}
+
+// @include adaptiv-value("padding", 50, 20, 0);

@@ -1,0 +1,89 @@
+@import "../core";
+
+.reviews {
+  padding-top: 60px;
+  padding-bottom: 214px;
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  .swiper-wrapper {
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  .swiper {
+    max-width: 1385px;
+  }
+
+  .slider__review {
+    width: 510px;
+
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.10);
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    @extend %absVertAlign;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.10));
+    z-index: 10;
+  }
+
+  .swiper-button-prev {
+    left: -20px;
+  }
+
+  .swiper-button-next {
+    right: -20px;
+  }
+
+
+  .swiper-slide-active {
+    min-height: 906px;
+    background-color: $colorHeader;
+    transform: scale(1.5);
+    padding: 90px 30px;
+  }
+
+  &__headline {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.96px;
+  }
+
+  &__client {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 16px;
+  }
+}

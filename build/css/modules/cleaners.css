@@ -1,0 +1,40 @@
+.cleaners {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.cleaners__title {
+  margin-bottom: 48px;
+}
+.cleaners__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.cleaners__info {
+  max-width: 485px;
+  padding: 130px 20px 45px;
+  border-radius: 30px;
+  background-color: #AFC8AD;
+}
+.cleaners__info p {
+  font-size: 23px;
+  font-weight: 300;
+  letter-spacing: 0.96px;
+  line-height: 1.4;
+}
+.cleaners__headline {
+  margin-bottom: 28px;
+  font-size: 50px;
+  font-weight: 400;
+  color: #594C42;
+  line-height: 1;
+}
+.cleaners__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.cleaners__item {
+  border-radius: 40px;
+  overflow: hidden;
+}

@@ -1,0 +1,53 @@
+//===========================
+// Основные цвета
+//===========================
+$colorWhite: #fff;
+$bttnColor: rgb(72 74 89);
+$bttnSecondColor: rgb(210, 59, 59);
+$colorBlack: #000;
+
+$colorAccent: #AFC8AD;
+$colorAccentText: #88AB8E;
+$colorSecondary: #DED0B6;
+$colorGray: #594C42;
+$colorBlackTitle: #1B1B1D;
+$colorGreenHeadline: #607274;
+$colorHeader: #F2F1EB;
+
+$red: #b5143b;
+$black: #191919;
+
+
+//===========================
+// Настройки адаптивной сетки 
+//===========================
+
+$minWidth: 320; // Минимальная ширина страницы
+$maxWidth: 1920; // Ширина макета
+$maxWidthContainerWide: 1400; // Ширина ограничивающего дополнительного контейнера (0 = нет ограничения)
+$maxWidthContainer: 1170; // Ширина ограничивающего контейнера (0 = нет ограничения)
+$smallWidthContainer: 736; // Ширина ограничивающего контейнера (0 = нет ограничения)
+$containerPadding: 30; // Отступ у контейнера (30 = по 15px слева и справа)
+$containerWidth: $maxWidthContainer + $containerPadding; // Ширина срабатывания брейкпоинта при полном размере контейнера
+$gridPadding: 20; // Отступ между блоками в сетке grid-*
+$gridMinSize: 450; // Минимальная ширина для 2 колонок
+
+// Брейкпоинты
+$uhd: 2160px;
+$fhd: 1900px;
+$lg: 1400px;
+$pc: $containerWidth+px;
+$sm-pc: 992px;
+$tablet: 768px;
+$mob: 576px;
+$i5: 320px;
+
+
+// Подсказка:
+// 2560 - 992 ПК, ноутбуки
+// 992 - 768 Планшет
+// 750 - 600 Горизонтальный моб
+// 600 - 320 Моб
+
+// Fonts
+$minFontSize: 1.4rem; // 14px

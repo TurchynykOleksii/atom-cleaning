@@ -1,0 +1,35 @@
+@import "../core";
+
+.header {
+	background-color: $colorHeader;
+	border-bottom: 0.5px solid $colorGray;
+
+	&__inner {
+		display: flex;
+		gap: 10px;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 56px;
+	}
+
+	&__item {
+		a {
+			font-size: 34px;
+		}
+	}
+
+	&__phone {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+
+		span {
+			font-size: 34px;
+		}
+	}
+}

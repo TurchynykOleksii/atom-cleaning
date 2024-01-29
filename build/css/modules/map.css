@@ -1,0 +1,47 @@
+.map {
+  padding-top: 60px;
+  padding-bottom: 31px;
+}
+.map__wrapper {
+  display: flex;
+  gap: 133px;
+}
+.map__title {
+  margin-bottom: 68px;
+}
+.map__info {
+  margin-top: 30px;
+}
+.map__headline {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.map__headline + p {
+  max-width: 459px;
+  margin-bottom: 80px;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  line-height: 1.4;
+}
+.map__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.map__item strong,
+.map__item span {
+  line-height: 1.4;
+  letter-spacing: 0.96px;
+  font-size: 24px;
+}
+.map__item strong {
+  font-weight: 400;
+}
+.map__item span {
+  font-weight: 300;
+}
+.map__item:not(:first-child) strong {
+  display: block;
+}

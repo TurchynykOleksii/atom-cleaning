@@ -1,0 +1,155 @@
+@import "../core";
+
+.contacts {
+  &__inner {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: -28px;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+
+  &__title {
+    margin-bottom: 118px;
+  }
+
+  &__form {
+    margin-left: auto;
+    margin-bottom: 190px;
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEE7DA;
+    border-radius: 40px;
+
+
+
+    input[type="text"],
+    input[type="number"] {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      padding: 14px;
+      font-size: 20px;
+      width: 100%;
+      border-radius: 8px;
+      border: none;
+
+      &::placeholder {
+        color: #878383;
+      }
+    }
+
+    input[name="code"],
+    textarea {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__headline {
+    margin-bottom: 40px;
+    display: block;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__questions {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.96px;
+    text-align: center;
+  }
+
+  &__radio {
+    max-width: 412px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__radio-btn {
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+    span {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    input {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-clip: border-box;
+      background-color: white;
+      box-shadow: 0px 0px 0px 1px white;
+      border: 8px solid #fff;
+      appearance: none;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      border-radius: 50%;
+    }
+
+    input:checked {
+      box-shadow: 0px 0px 0px 1px white;
+      background-color: black;
+    }
+  }
+
+  &__text {
+    margin-bottom: 16px;
+    width: 100%;
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  &__radio-el {
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+
+
+  }
+
+  &__textarea-text {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.96px;
+    font-weight: 300;
+  }
+
+  &__radio-email {
+    input {
+      margin-left: auto;
+    }
+  }
+
+  .form__btn {
+    padding: 18px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    font-size: 22px;
+    background-color: $colorAccentText;
+    text-align: center;
+  }
+}

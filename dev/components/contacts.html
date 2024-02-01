@@ -2,6 +2,36 @@
   <div class="wrapper">
     <div class="contacts__inner">
       <h6 class="contacts__title section-title">Contact Us</h6>
+      <div class="contacts__main">
+        <div class="contacts__img">
+          <img src="../img/general/contacts.jpg" alt="photo cleaning ">
+        </div>
+        <form class="contacts__form">
+          <span class="contacts__headline">Get a Quote</span>
+          <p class="contacts__questions">How would you like to receive a quote?</p>
+          <div class="contacts__radio">
+            <label class="contacts__radio-btn">
+              <span>By phone</span>
+              <input type="radio" name="radio" value="By phone" checked>
+            </label>
+            <label class="contacts__radio-btn contacts__radio-email">
+              <span>By Email:</span>
+              <input type="radio" name="radio" value="By Email">
+            </label>
+          </div>
+          <span class="contacts__text">Add your details to get a quote</span>
+          <input type="text" name="fullname" placeholder="Enter your Full Name">
+          <input type="number" name="phone" placeholder="Enter your Phone Number">
+          <input type="text" name="code" placeholder="Enter your Postal Code">
+          <p class="contacts__textarea-text">
+            Please provide details about your order, including the type of space (house, apartment, or office), the
+            number of rooms,
+            total area, and any special requests you may have.
+          </p>
+          <textarea name="order" cols="40" rows="5" placeholder="Text"></textarea>
+          <input type="button" value="Get  a Quote" class="form__btn">
+        </form>
+      </div>
     </div>
   </div>
 </section>

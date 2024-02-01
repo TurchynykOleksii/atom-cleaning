@@ -1,0 +1,69 @@
+@import "../core";
+
+.services {
+  &__title {
+    margin-bottom: 146px;
+  }
+
+  &__tabs {
+    position: relative;
+  }
+
+  &__tab {
+    position: relative;
+    padding: 32px 24px;
+    border-radius: 30px;
+    background: #EEE7DA;
+    box-shadow: 4px 0px 15px 0px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    opacity: 0;
+
+    img {
+      border-radius: 30px;
+    }
+  }
+
+  &__btns {
+    position: absolute;
+    top: -90px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 104%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    position: relative;
+    min-width: 180px;
+    padding: 20px 5px;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 10px 10px 0px 0px;
+    background: #EEE7DA;
+    box-shadow: 4px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+
+    &--active {
+      z-index: 2;
+      border-radius: 10px 10px 30px 30px;
+      background: #AFC8AD;
+    }
+  }
+
+  &__item {
+    &--active {
+      position: relative;
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+}

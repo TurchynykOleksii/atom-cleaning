@@ -1,21 +1,111 @@
 @font-face {
-	font-family: Golos;
+	font-family: Kaisen;
 	font-display: swap;
-	src: url("../fonts/Golos-regular.woff2") format("woff2"), url("../fonts/Golos-regular.woff") format("woff");
+	src: url("../fonts/KaiseiOpti-Regular.woff2") format("woff2"), url("../fonts/KaiseiOpti-Regular.woff2.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
+
 @font-face {
-	font-family: Golos;
+	font-family: Kaisen;
 	font-display: swap;
-	src: url("../fonts/Golos-medium.woff2") format("woff2"), url("../fonts/Golos-medium.woff") format("woff");
+	src: url("../fonts/KaiseiOpti-Medium.woff2") format("woff2"), url("../fonts/KaiseiOpti-Medium.woff2") format("woff");
 	font-weight: 500;
 	font-style: normal;
 }
+
 @font-face {
-	font-family: Golos;
+	font-family: Kaisen;
 	font-display: swap;
-	src: url("../fonts/Golos-bold.woff2") format("woff2"), url("../fonts/Golos-bold.woff") format("woff");
+	src: url("../fonts/KaiseiOpti-Bold.woff2") format("woff2"), url("../fonts/KaiseiOpti-Bold.woff2") format("woff");
 	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: SFUIDisplay;
+	font-display: swap;
+	src: url("../fonts/SFUIDisplay-Thin.woff2") format("woff2"), url("../fonts/SFUIDisplay-Thin.woff2") format("woff");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: SFUIDisplay;
+	font-display: swap;
+	src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff2") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: SFUIDisplay;
+	font-display: swap;
+	src: url("../fonts/SFUIDisplay-Regular.woff2") format("woff2"), url("../fonts/SFUIDisplay-Regular.woff2") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: SFUIDisplay;
+	font-display: swap;
+	src: url("../fonts/SFUIDisplay-Medium.woff2") format("woff2"), url("../fonts/SFUIDisplay-Medium.woff2") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: SFUIDisplay;
+	font-display: swap;
+	src: url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff2") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Kalam;
+	font-display: swap;
+	src: url("../fonts/Kalam-Light.woff2") format("woff2"), url("../fonts/Kalam-Light.woff2") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Kalam;
+	font-display: swap;
+	src: url("../fonts/Kalam-Regular.woff2") format("woff2"), url("../fonts/Kalam-Regular.woff2") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Kalam;
+	font-display: swap;
+	src: url("../fonts/Kalam-Bold.woff2") format("woff2"), url("../fonts/Kalam-Bold.woff2") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: SFProDisplay;
+	font-display: swap;
+	src: url("../fonts/SF-Pro-Display-Light.woff2") format("woff2"), url("../fonts/SF-Pro-Display-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: SFProDisplay;
+	font-display: swap;
+	src: url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2"), url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: SFProDisplay;
+	font-display: swap;
+	src: url("../fonts/SF-Pro-Display-Medium.woff2") format("woff2"), url("../fonts/SF-Pro-Display-Medium.woff") format("woff");
+	font-weight: 500;
 	font-style: normal;
 }

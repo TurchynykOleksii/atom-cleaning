@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: Golos, sans-serif;
+  font-family: SFUIDisplay, sans-serif;
   background-color: $colorHeader;
   display: flex;
   flex-direction: column;
@@ -251,4 +251,5 @@ a {
   font-weight: 400;
   text-align: center;
   color: $colorGreenHeadline;
+  font-family: Kaisen;
 }

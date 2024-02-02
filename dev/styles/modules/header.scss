@@ -20,6 +20,9 @@
 	&__item {
 		a {
 			font-size: 34px;
+			font-weight: 400;
+			font-family: SFProDisplay;
+			color: #594C42;
 		}
 	}
 
@@ -27,9 +30,11 @@
 		display: flex;
 		align-items: center;
 		gap: 12px;
+		color: #594C42;
 
 		span {
 			font-size: 34px;
+			color: #594C42;
 		}
 	}
 }

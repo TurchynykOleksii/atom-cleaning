@@ -19,16 +19,19 @@
 
   &__headline {
     margin-bottom: 40px;
+    font-family: Kaisen, sans-serif;
     font-size: 40px;
     font-weight: 400;
 
     +p {
       max-width: 459px;
       margin-bottom: 80px;
+      font-family: SFUIDisplay, sans-serif;
       font-size: 30px;
       font-weight: 300;
-      letter-spacing: 0.9px;
       line-height: 1.4;
+      letter-spacing: 0.03em;
+      color: #594c42;
     }
   }
 
@@ -46,7 +49,9 @@
     span {
       line-height: 1.4;
       letter-spacing: 0.96px;
+      font-family: SFProDisplay, sans-serif;
       font-size: 24px;
+      font-weight: 300;
     }
 
     strong {

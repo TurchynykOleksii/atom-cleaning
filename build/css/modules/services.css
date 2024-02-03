@@ -35,7 +35,9 @@
 .services__btn {
   position: relative;
   min-width: 180px;
-  padding: 20px 5px;
+  padding: 20px;
+  color: #594c42;
+  font-family: Kalam, sans-serif;
   font-size: 30px;
   font-weight: 400;
   border-radius: 10px 10px 0px 0px;
@@ -57,15 +59,18 @@
 .services__info span {
   display: block;
   margin-bottom: 28px;
-  font-size: 50px;
+  font-family: Kaisen, sans-serif;
+  font-size: 45px;
   color: #607274;
   font-weight: 400;
 }
 .services__info p {
+  font-family: SFUIDisplay, sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.4;
-  letter-spacing: 0.96px;
+  letter-spacing: 0.04em;
+  color: #1b1b1d;
 }
 .services__item {
   display: flex;

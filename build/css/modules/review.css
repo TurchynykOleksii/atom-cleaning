@@ -19,7 +19,7 @@
   max-width: 1385px;
 }
 .reviews .slider__review {
-  width: 510px;
+  width: 506px;
   padding: 40px 30px;
   background-color: #fff;
   border-radius: 30px;
@@ -45,13 +45,14 @@
   right: -20px;
 }
 .reviews .swiper-slide-active {
-  min-height: 906px;
+  min-height: 840px;
   background-color: #F2F1EB;
   transform: scale(1.5);
   padding: 90px 30px;
 }
 .reviews__headline {
   margin-bottom: 40px;
+  font-family: Kaisen, sans-serif;
   font-size: 30px;
   font-weight: 400;
 }
@@ -60,7 +61,7 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 1.4;
-  letter-spacing: 0.96px;
+  letter-spacing: 0.04em;
 }
 .reviews__client {
   display: flex;
@@ -74,4 +75,6 @@
 .reviews__name {
   display: block;
   margin-bottom: 16px;
+  font-family: Kaisen, sans-serif;
+  font-size: 24px;
 }

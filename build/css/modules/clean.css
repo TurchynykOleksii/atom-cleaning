@@ -40,6 +40,9 @@
 }
 .clean__slider-wrapper p {
   font-size: 40px;
+  font-weight: 400;
+  font-family: Kalam, sans-serif;
+  color: #594c42;
 }
 .clean__swiper-img {
   max-height: 866px;

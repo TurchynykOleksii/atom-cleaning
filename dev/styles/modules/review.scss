@@ -18,7 +18,7 @@
   }
 
   .slider__review {
-    width: 510px;
+    width: 506px;
 
     padding: 40px 30px;
     background-color: #fff;
@@ -51,7 +51,7 @@
 
 
   .swiper-slide-active {
-    min-height: 906px;
+    min-height: 840px;
     background-color: $colorHeader;
     transform: scale(1.5);
     padding: 90px 30px;
@@ -59,16 +59,18 @@
 
   &__headline {
     margin-bottom: 40px;
+    font-family: Kaisen, sans-serif;
     font-size: 30px;
     font-weight: 400;
   }
 
   &__text {
     margin-bottom: 40px;
+
     font-size: 24px;
     font-weight: 300;
     line-height: 1.4;
-    letter-spacing: 0.96px;
+    letter-spacing: 0.04em;
   }
 
   &__client {
@@ -85,5 +87,7 @@
   &__name {
     display: block;
     margin-bottom: 16px;
+    font-family: Kaisen, sans-serif;
+    font-size: 24px;
   }
 }

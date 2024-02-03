@@ -29,7 +29,7 @@
 .contacts__form input[type=text],
 .contacts__form input[type=number],
 .contacts__form textarea {
-  padding: 14px;
+  padding: 14px 16px;
   font-size: 20px;
   width: 100%;
   border-radius: 8px;
@@ -47,6 +47,7 @@
 .contacts__headline {
   margin-bottom: 40px;
   display: block;
+  font-family: Kaisen, sans-serif;
   font-size: 50px;
   font-weight: 400;
   text-align: center;
@@ -122,7 +123,9 @@
   border-radius: 15px;
   border: none;
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  font-family: SFProDisplay, sans-serif;
   font-size: 22px;
+  font-weight: 500;
   background-color: #88AB8E;
   text-align: center;
 }

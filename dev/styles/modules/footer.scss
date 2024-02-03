@@ -37,9 +37,9 @@
 		max-width: 772px;
 		width: 100%;
 		font-size: 24px;
-		line-height: 300;
+		font-weight: 300;
 		line-height: 1.4;
-		letter-spacing: 0.96px;
+		letter-spacing: 0.04em;
 	}
 
 	&__subscr-btn {
@@ -59,6 +59,7 @@
 
 	&__slogan {
 		margin-bottom: 40px;
+		font-family: Kaisen, sans-serif;
 		font-size: 40px;
 		text-align: center;
 		font-weight: 400;
@@ -75,9 +76,10 @@
 		p {
 			margin-bottom: 20px;
 			font-size: 18px;
+			font-weight: 300;
 			color: $colorBlack;
 			line-height: 1.5;
-			letter-spacing: 0.54px;
+			letter-spacing: 0.03em;
 		}
 	}
 
@@ -88,14 +90,18 @@
 
 	&__text-headline {
 		margin-bottom: 20px;
+		font-family: Kaisen, sans-serif;
 		font-size: 40px;
 		font-weight: 400;
+		color: #594c42;
 	}
 
 	&__menu-headline {
 		margin-bottom: 30px;
+		font-family: Kaisen, sans-serif;
 		font-size: 30px;
 		font-weight: 400;
+		color: #594c42;
 	}
 
 	&__menu {
@@ -113,8 +119,10 @@
 
 	&__contacts-headline {
 		margin-bottom: 30px;
+		font-family: Kaisen, sans-serif;
 		font-size: 30px;
 		font-weight: 400;
+		color: #594c42;
 	}
 
 	&__contacts-list {
@@ -129,12 +137,14 @@
 		align-items: center;
 		gap: 18px;
 		font-size: 18px;
+		font-weight: 300;
 
 		a {
 			display: flex;
 			align-items: center;
 			gap: 18px;
 			font-size: 18px;
+			font-weight: 300;
 		}
 	}
 }

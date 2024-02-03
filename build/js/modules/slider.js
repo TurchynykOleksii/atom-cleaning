@@ -21,7 +21,7 @@ const swiperReview = new Swiper(".swiper.reviews__swiper", {
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
-    depth: 120,
+    depth: 115,
     modifier: 1,
     slideShadows: false,
   },

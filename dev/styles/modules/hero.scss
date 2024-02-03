@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Kaisen;
     font-weight: 400;
     font-size: 140px;
     line-height: 0.7;
@@ -33,10 +34,13 @@
     justify-content: center;
     font-size: 55px;
     font-weight: 400;
+    color: #594c42;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
     span {
       font-size: 34px;
       color: $colorAccentText;
+      text-shadow: none;
     }
   }
 

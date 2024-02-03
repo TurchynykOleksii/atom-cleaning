@@ -32,9 +32,9 @@
   max-width: 772px;
   width: 100%;
   font-size: 24px;
-  line-height: 300;
+  font-weight: 300;
   line-height: 1.4;
-  letter-spacing: 0.96px;
+  letter-spacing: 0.04em;
 }
 .footer__subscr-btn {
   padding: 18px;
@@ -52,6 +52,7 @@
 }
 .footer__slogan {
   margin-bottom: 40px;
+  font-family: Kaisen, sans-serif;
   font-size: 40px;
   text-align: center;
   font-weight: 400;
@@ -66,9 +67,10 @@
 .footer__text-inf p {
   margin-bottom: 20px;
   font-size: 18px;
+  font-weight: 300;
   color: #000;
   line-height: 1.5;
-  letter-spacing: 0.54px;
+  letter-spacing: 0.03em;
 }
 .footer__social {
   display: flex;
@@ -76,13 +78,17 @@
 }
 .footer__text-headline {
   margin-bottom: 20px;
+  font-family: Kaisen, sans-serif;
   font-size: 40px;
   font-weight: 400;
+  color: #594c42;
 }
 .footer__menu-headline {
   margin-bottom: 30px;
+  font-family: Kaisen, sans-serif;
   font-size: 30px;
   font-weight: 400;
+  color: #594c42;
 }
 .footer__menu {
   display: flex;
@@ -95,8 +101,10 @@
 }
 .footer__contacts-headline {
   margin-bottom: 30px;
+  font-family: Kaisen, sans-serif;
   font-size: 30px;
   font-weight: 400;
+  color: #594c42;
 }
 .footer__contacts-list {
   max-width: 368px;
@@ -109,10 +117,12 @@
   align-items: center;
   gap: 18px;
   font-size: 18px;
+  font-weight: 300;
 }
 .footer__contacts-item a {
   display: flex;
   align-items: center;
   gap: 18px;
   font-size: 18px;
+  font-weight: 300;
 }

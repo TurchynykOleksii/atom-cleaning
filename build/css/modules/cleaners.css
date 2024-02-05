@@ -7,29 +7,60 @@
 }
 .cleaners__wrapper {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 0;
+}
+@media only screen and (min-width: 1588px) {
+  .cleaners__wrapper {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+.cleaners__hide {
+  display: none;
+}
+@media only screen and (min-width: 1588px) {
+  .cleaners__hide {
+    display: block;
+  }
 }
 .cleaners__info {
-  max-width: 485px;
-  padding: 130px 20px 45px;
-  border-radius: 30px;
+  padding: 30px 20px;
+  border-radius: 30px 30px 0 0;
   background-color: #AFC8AD;
+}
+@media only screen and (min-width: 1588px) {
+  .cleaners__info {
+    max-width: 485px;
+    padding: 130px 20px 45px;
+    border-radius: 30px;
+  }
 }
 .cleaners__info p {
   font-family: SFUIDisplay, sans-serif;
-  font-size: 23px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
   letter-spacing: 0.04em;
   color: #1b1b1d;
 }
+@media only screen and (min-width: 1588px) {
+  .cleaners__info p {
+    font-size: 23px;
+  }
+}
 .cleaners__headline {
   margin-bottom: 28px;
   font-family: Kaisen, sans-serif;
-  font-size: 50px;
+  font-size: 24px;
   font-weight: 400;
   color: #594C42;
   line-height: 1;
+}
+@media only screen and (min-width: 1588px) {
+  .cleaners__headline {
+    font-size: 50px;
+  }
 }
 .cleaners__list {
   display: flex;

@@ -15,6 +15,14 @@
   padding: 20px 0;
   align-items: center;
 }
+.reviews__swiper {
+  display: none;
+}
+@media only screen and (min-width: 1588px) {
+  .reviews__swiper {
+    display: block;
+  }
+}
 .reviews .swiper {
   max-width: 1385px;
 }
@@ -27,16 +35,22 @@
 }
 .reviews .swiper-button-prev,
 .reviews .swiper-button-next {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #fff;
-  filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.1));
-  z-index: 10;
+  display: none;
+}
+@media only screen and (min-width: 1588px) {
+  .reviews .swiper-button-prev,
+.reviews .swiper-button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.1));
+    z-index: 10;
+  }
 }
 .reviews .swiper-button-prev {
   left: -20px;
@@ -77,4 +91,58 @@
   margin-bottom: 16px;
   font-family: Kaisen, sans-serif;
   font-size: 24px;
+}
+
+.reviews__swiper-mobile {
+  padding: 0 5px !important;
+}
+@media only screen and (min-width: 1588px) {
+  .reviews__swiper-mobile {
+    padding: 0;
+    display: none;
+  }
+}
+.reviews__swiper-mobile .reviews__headline {
+  font-size: 24px;
+}
+@media only screen and (min-width: 1588px) {
+  .reviews__swiper-mobile .reviews__headline {
+    font-size: 30px;
+  }
+}
+.reviews__swiper-mobile .reviews__name {
+  font-size: 20px;
+}
+@media only screen and (min-width: 1588px) {
+  .reviews__swiper-mobile .reviews__name {
+    font-size: 24px;
+  }
+}
+.reviews__swiper-mobile .reviews__list {
+  gap: 10px;
+}
+@media only screen and (min-width: 1588px) {
+  .reviews__swiper-mobile .reviews__list {
+    gap: 16px;
+  }
+}
+.reviews__swiper-mobile .reviews__photo {
+  width: 80px;
+  height: 80px;
+}
+@media only screen and (min-width: 1588px) {
+  .reviews__swiper-mobile .reviews__photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+.reviews__swiper-mobile .slider__review {
+  padding: 32px 16px;
+  min-height: auto;
+}
+.reviews__swiper-mobile .reviews__text {
+  font-size: 16px;
+}
+.reviews__swiper-mobile .swiper-slide-active {
+  background-color: #fff;
 }

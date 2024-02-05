@@ -7,6 +7,11 @@
 
   &__tabs {
     position: relative;
+    display: none;
+
+    @include minw($lg-custom) {
+      display: block;
+    }
   }
 
   &__tab {

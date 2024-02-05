@@ -1,7 +1,6 @@
 const swiper = new Swiper(".clean__inner .swiper", {
-  slidesPerView: "1",
+  slidesPerView: 1,
   loop: true,
-
   navigation: {
     nextEl: ".clean__inner .swiper-button-next",
     prevEl: ".clean__inner .swiper-button-prev",
@@ -30,4 +29,9 @@ const swiperReview = new Swiper(".swiper.reviews__swiper", {
     nextEl: ".reviews__inner .swiper-button-next",
     prevEl: ".reviews__inner .swiper-button-prev",
   },
+});
+const swiperReviewMobile = new Swiper(".swiper.reviews__swiper-mobile", {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 30,
 });

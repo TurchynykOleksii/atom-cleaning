@@ -9,20 +9,46 @@
 		gap: 10px;
 		justify-content: space-between;
 		align-items: center;
+
+	}
+
+	&__logo {
+		img {
+			width: 120px;
+			height: 62px;
+
+			@include minw($lg-custom) {
+				width: 244px;
+				height: 116px;
+			}
+		}
+
+
 	}
 
 	&__list {
-		display: flex;
-		align-items: center;
-		gap: 56px;
+		display: none;
+
+
+		@include minw($lg-custom) {
+			display: flex;
+			align-items: center;
+			gap: 56px;
+		}
 	}
 
 	&__item {
 		a {
-			font-size: 34px;
+
 			font-weight: 400;
 			font-family: SFProDisplay;
 			color: #594C42;
+
+
+
+			@include minw($lg-custom) {
+				font-size: 34px;
+			}
 		}
 	}
 
@@ -33,8 +59,13 @@
 		color: #594C42;
 
 		span {
-			font-size: 34px;
 			color: #594C42;
+
+
+
+			@include minw($lg-custom) {
+				font-size: 34px;
+			}
 		}
 	}
 }

@@ -2,25 +2,50 @@
   position: relative;
 }
 .contacts__img {
+  max-width: 315px;
+  width: 100%;
   position: absolute;
-  top: -28px;
+  top: -165px;
+  left: 50%;
   border-radius: 40px;
   overflow: hidden;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+@media only screen and (min-width: 1588px) {
+  .contacts__img {
+    max-width: 1302px;
+    top: -45px;
+    left: 0;
+    z-index: 0;
+    transform: translateX(0);
+  }
 }
 .contacts__title {
-  margin-bottom: 118px;
+  margin-bottom: 195px;
+}
+@media only screen and (min-width: 1588px) {
+  .contacts__title {
+    margin-bottom: 118px;
+  }
 }
 .contacts__form {
-  margin-left: auto;
-  margin-bottom: 190px;
-  padding: 30px;
-  max-width: 700px;
+  padding: 120px 16px 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #EEE7DA;
-  border-radius: 40px;
+  border-radius: 30px;
+}
+@media only screen and (min-width: 1588px) {
+  .contacts__form {
+    max-width: 700px;
+    margin-left: auto;
+    margin-bottom: 190px;
+    padding: 30px;
+    border-radius: 40px;
+  }
 }
 .contacts__form input[type=text],
 .contacts__form input[type=number] {
@@ -45,20 +70,31 @@
   margin-bottom: 36px;
 }
 .contacts__headline {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   display: block;
   font-family: Kaisen, sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  text-align: center;
+  font-size: 36px;
+}
+@media only screen and (min-width: 1588px) {
+  .contacts__headline {
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+  }
 }
 .contacts__questions {
   margin-bottom: 12px;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
-  letter-spacing: 0.96px;
+  letter-spacing: 0.04em;
   text-align: center;
+}
+@media only screen and (min-width: 1588px) {
+  .contacts__questions {
+    font-size: 24px;
+  }
 }
 .contacts__radio {
   max-width: 412px;
@@ -76,7 +112,12 @@
 }
 .contacts__radio-btn span {
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 24px;
+}
+@media only screen and (min-width: 1588px) {
+  .contacts__radio-btn span {
+    font-size: 30px;
+  }
 }
 .contacts__radio-btn input {
   position: relative;
@@ -95,12 +136,18 @@
   background-color: black;
 }
 .contacts__text {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   width: 100%;
   display: block;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 300;
   text-align: left;
+}
+@media only screen and (min-width: 1588px) {
+  .contacts__text {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
 }
 .contacts__radio-el {
   position: relative;
@@ -109,10 +156,15 @@
 }
 .contacts__textarea-text {
   margin-bottom: 12px;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.96px;
   font-weight: 300;
+}
+@media only screen and (min-width: 1588px) {
+  .contacts__textarea-text {
+    font-size: 24px;
+  }
 }
 .contacts__radio-email input {
   margin-left: auto;

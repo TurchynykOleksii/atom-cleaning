@@ -8,16 +8,35 @@
   justify-content: space-between;
   align-items: center;
 }
+.header__logo img {
+  width: 120px;
+  height: 62px;
+}
+@media only screen and (min-width: 1588px) {
+  .header__logo img {
+    width: 244px;
+    height: 116px;
+  }
+}
 .header__list {
-  display: flex;
-  align-items: center;
-  gap: 56px;
+  display: none;
+}
+@media only screen and (min-width: 1588px) {
+  .header__list {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
 }
 .header__item a {
-  font-size: 34px;
   font-weight: 400;
   font-family: SFProDisplay;
   color: #594C42;
+}
+@media only screen and (min-width: 1588px) {
+  .header__item a {
+    font-size: 34px;
+  }
 }
 .header__phone {
   display: flex;
@@ -26,6 +45,10 @@
   color: #594C42;
 }
 .header__phone span {
-  font-size: 34px;
   color: #594C42;
+}
+@media only screen and (min-width: 1588px) {
+  .header__phone span {
+    font-size: 34px;
+  }
 }

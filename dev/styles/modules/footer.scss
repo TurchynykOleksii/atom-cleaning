@@ -2,9 +2,15 @@
 
 .footer {
 	padding-top: 30px;
-	padding-bottom: 133px;
+	padding-bottom: 30px;
 	background-color: #EEE7DA;
-	border-top: 0.5px solid #594C42;
+
+	@include minw($lg-custom) {
+		padding-top: 30px;
+		padding-bottom: 133px;
+
+		border-top: 0.5px solid #594C42;
+	}
 
 	&__inner {
 		display: flex;
@@ -13,61 +19,99 @@
 	}
 
 	&__subscription {
-		margin-top: -113px;
+		padding: 32px 16px;
+		margin-top: -200px;
 		margin-bottom: 56px;
-		max-width: 1365px;
-		width: 100%;
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		background-color: $colorAccent;
 		border-radius: 12px;
+
+		@include minw($lg-custom) {
+			margin-top: -113px;
+			max-width: 1365px;
+			width: 100%;
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__subscr {
 		width: 100%;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		gap: 81px;
+		flex-direction: column;
+
+		@include minw($lg-custom) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			gap: 81px;
+		}
 	}
 
 	&__subscr-text {
-		max-width: 772px;
-		width: 100%;
-		font-size: 24px;
+		margin-bottom: 40px;
+		font-size: 16px;
 		font-weight: 300;
-		line-height: 1.4;
 		letter-spacing: 0.04em;
+		line-height: 1.4;
+
+		@include minw($lg-custom) {
+			max-width: 772px;
+			width: 100%;
+			font-size: 24px;
+		}
 	}
+
+
 
 	&__subscr-btn {
-		padding: 18px;
-		max-width: 389px;
-		width: 100%;
-		font-size: 22px;
-		font-weight: 500;
+		padding: 14px 18px;
+		font-size: 20px;
 		background-color: $colorWhite;
 		text-align: center;
-		border-radius: 16px;
-		line-height: 1.4;
-		letter-spacing: 0.66px;
 		border: 3px solid #88AB8E;
 		box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15);
+		border-radius: 16px;
+
+		@include minw($lg-custom) {
+			padding: 18px;
+			max-width: 389px;
+			width: 100%;
+			font-size: 22px;
+			font-weight: 500;
+			line-height: 1.4;
+			letter-spacing: 0.66px;
+
+		}
 	}
 
+
+
 	&__slogan {
-		margin-bottom: 40px;
+		display: block;
+		margin-bottom: 16px;
 		font-family: Kaisen, sans-serif;
-		font-size: 40px;
 		text-align: center;
+		font-size: 19px;
 		font-weight: 400;
+
+		@include minw($lg-custom) {
+			margin-bottom: 40px;
+			font-size: 40px;
+		}
 	}
 
 	&__info {
 		display: flex;
-		gap: 150px;
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+
+		@include minw($lg-custom) {
+			flex-direction: row;
+			gap: 150px;
+		}
 	}
 
 	&__text-inf {
@@ -86,6 +130,12 @@
 	&__social {
 		display: flex;
 		gap: 40px;
+
+		&.footer__mobile {
+			@include minw($lg-custom) {
+				display: none;
+			}
+		}
 	}
 
 	&__text-headline {
@@ -118,11 +168,16 @@
 	}
 
 	&__contacts-headline {
-		margin-bottom: 30px;
-		font-family: Kaisen, sans-serif;
-		font-size: 30px;
-		font-weight: 400;
-		color: #594c42;
+		display: none;
+
+		@include minw($lg-custom) {
+			display: block;
+			margin-bottom: 30px;
+			font-family: Kaisen, sans-serif;
+			font-size: 30px;
+			font-weight: 400;
+			color: #594c42;
+		}
 	}
 
 	&__contacts-list {
@@ -145,6 +200,22 @@
 			gap: 18px;
 			font-size: 18px;
 			font-weight: 300;
+		}
+	}
+
+	&__hide {
+		display: none;
+
+		@include minw($lg-custom) {
+			display: block;
+
+		}
+	}
+
+	&__logo {
+		@include minw($lg-custom) {
+			display: none;
+
 		}
 	}
 }

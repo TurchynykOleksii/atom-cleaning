@@ -6,29 +6,49 @@
   }
 
   &__img {
+    max-width: 315px;
+    width: 100%;
     position: absolute;
-    top: -28px;
+    top: -165px;
+    left: 50%;
     border-radius: 40px;
     overflow: hidden;
+    z-index: 2;
+    transform: translateX(-50%);
+
+    @include minw($lg-custom) {
+      max-width: 1302px;
+      top: -45px;
+      left: 0;
+      z-index: 0;
+      transform: translateX(0);
+    }
   }
 
   &__title {
-    margin-bottom: 118px;
+    margin-bottom: 195px;
+
+    @include minw($lg-custom) {
+      margin-bottom: 118px;
+    }
   }
 
   &__form {
-    margin-left: auto;
-    margin-bottom: 190px;
-    padding: 30px;
-    max-width: 700px;
+    padding: 120px 16px 30px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #EEE7DA;
-    border-radius: 40px;
+    border-radius: 30px;
 
-
+    @include minw($lg-custom) {
+      max-width: 700px;
+      margin-left: auto;
+      margin-bottom: 190px;
+      padding: 30px;
+      border-radius: 40px;
+    }
 
     input[type="text"],
     input[type="number"] {
@@ -56,21 +76,32 @@
   }
 
   &__headline {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     display: block;
     font-family: Kaisen, sans-serif;
-    font-size: 50px;
-    font-weight: 400;
-    text-align: center;
+    font-size: 36px;
+
+    @include minw($lg-custom) {
+      margin-bottom: 40px;
+
+      font-size: 50px;
+      font-weight: 400;
+      text-align: center;
+    }
   }
 
   &__questions {
     margin-bottom: 12px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.4;
-    letter-spacing: 0.96px;
+    letter-spacing: 0.04em;
     text-align: center;
+
+    @include minw($lg-custom) {
+
+      font-size: 24px;
+    }
   }
 
   &__radio {
@@ -90,7 +121,11 @@
 
     span {
       margin-bottom: 20px;
-      font-size: 30px;
+      font-size: 24px;
+
+      @include minw($lg-custom) {
+        font-size: 30px;
+      }
     }
 
     input {
@@ -113,12 +148,17 @@
   }
 
   &__text {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     width: 100%;
     display: block;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 300;
     text-align: left;
+
+    @include minw($lg-custom) {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
   }
 
   &__radio-el {
@@ -131,10 +171,14 @@
 
   &__textarea-text {
     margin-bottom: 12px;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.96px;
     font-weight: 300;
+
+    @include minw($lg-custom) {
+      font-size: 24px;
+    }
   }
 
   &__radio-email {

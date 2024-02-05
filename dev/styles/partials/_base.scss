@@ -22,10 +22,14 @@ html {
 
 body {
   font-family: SFUIDisplay, sans-serif;
-  background-color: $colorHeader;
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  @include minw($lg-custom) {
+    background-color: $colorHeader;
+  }
 }
 
 section {
@@ -35,12 +39,17 @@ section {
 
 main {
   flex: 1;
-  margin-top: 6rem;
 
 
   @include minw($sm-pc) {
     margin-top: 0;
   }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ol,
@@ -53,10 +62,17 @@ a {
 }
 
 .wrapper {
-  max-width: 1588px;
-  width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  max-width: 350px;
+  padding: 0 5px;
+  width: 100%;
+
+
+
+  @include minw($lg-custom) {
+    max-width: $lg-custom;
+    padding: 0 10px;
+  }
 }
 
 
@@ -247,9 +263,14 @@ a {
 }
 
 .section-title {
-  font-size: 50px;
+  font-size: 24px;
+  font-family: Kaisen;
   font-weight: 400;
   text-align: center;
   color: $colorGreenHeadline;
-  font-family: Kaisen;
+
+  @include minw($lg-custom) {
+    font-size: 50px;
+
+  }
 }

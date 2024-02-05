@@ -6,7 +6,25 @@
 
   &__wrapper {
     display: flex;
-    gap: 133px;
+    flex-direction: column;
+
+    @include minw($lg-custom) {
+      flex-direction: row;
+      gap: 133px;
+    }
+  }
+
+  &__mobile-text {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.4;
+    font-weight: 300;
+
+    @include minw($lg-custom) {
+      display: none;
+    }
   }
 
   &__title {
@@ -18,20 +36,30 @@
   }
 
   &__headline {
-    margin-bottom: 40px;
-    font-family: Kaisen, sans-serif;
-    font-size: 40px;
-    font-weight: 400;
+    display: none;
+
+    @include minw($lg-custom) {
+      display: block;
+      margin-bottom: 40px;
+      font-family: Kaisen, sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+    }
 
     +p {
-      max-width: 459px;
-      margin-bottom: 80px;
-      font-family: SFUIDisplay, sans-serif;
-      font-size: 30px;
-      font-weight: 300;
-      line-height: 1.4;
-      letter-spacing: 0.03em;
-      color: #594c42;
+      display: none;
+
+      @include minw($lg-custom) {
+        display: block;
+        max-width: 459px;
+        margin-bottom: 80px;
+        font-family: SFUIDisplay, sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.4;
+        letter-spacing: 0.03em;
+        color: #594c42;
+      }
     }
   }
 
@@ -41,17 +69,26 @@
     gap: 24px;
 
 
+
   }
 
   &__item {
 
     strong,
     span {
+      display: block;
       line-height: 1.4;
       letter-spacing: 0.96px;
       font-family: SFProDisplay, sans-serif;
-      font-size: 24px;
+      font-size: 16px;
+      text-align: center;
       font-weight: 300;
+
+      @include minw($lg-custom) {
+        display: inline;
+        font-size: 24px;
+        text-align: left;
+      }
     }
 
     strong {

@@ -73,7 +73,12 @@
   }
 
   &__item {
-    border-radius: 40px;
+    border-radius: 0 0 30px 30px;
     overflow: hidden;
+
+    @include minw($lg-custom) {
+
+      border-radius: 40px;
+    }
   }
 }

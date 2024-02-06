@@ -1,15 +1,36 @@
 @import "../core";
 
 .header {
+	padding: 5px 0;
 	background-color: $colorHeader;
 	border-bottom: 0.5px solid $colorGray;
 
 	&__inner {
 		display: flex;
-		gap: 10px;
 		justify-content: space-between;
 		align-items: center;
+		gap: 40px;
 
+		@include minw($lg-custom) {
+			gap: 10px;
+		}
+
+	}
+
+	&__nav {
+		display: none;
+
+		@include minw($lg-custom) {
+			display: block;
+		}
+	}
+
+	&__burger-btn {
+		border: none;
+
+		@include minw($lg-custom) {
+			display: none;
+		}
 	}
 
 	&__logo {
@@ -52,18 +73,37 @@
 		}
 	}
 
-	&__phone {
+	&__mobile-phone {
 		display: flex;
+		justify-content: center;
 		align-items: center;
-		gap: 12px;
-		color: #594C42;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: $colorAccentText;
+
+		@include minw($lg-custom) {
+			display: none;
+		}
+	}
+
+	&__phone {
+
+		display: none;
+
+		@include minw($lg-custom) {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			color: #594C42;
+			font-size: 34px;
+		}
 
 		span {
 			color: #594C42;
 
-
-
 			@include minw($lg-custom) {
+				color: #594C42;
 				font-size: 34px;
 			}
 		}

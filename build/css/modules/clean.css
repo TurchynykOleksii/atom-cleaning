@@ -8,6 +8,32 @@
   padding-top: 70px;
   padding-bottom: 60px;
 }
+.clean__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media only screen and (min-width: 1588px) {
+  .clean__list {
+    display: none;
+  }
+}
+.clean__item p {
+  margin-bottom: 5px;
+  font-family: Kalam;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: #594C42;
+}
+.clean .swiper.clean__swiper {
+  display: none;
+}
+@media only screen and (min-width: 1588px) {
+  .clean .swiper.clean__swiper {
+    display: block;
+  }
+}
 .clean .swiper-button-prev,
 .clean .swiper-button-next {
   display: flex;

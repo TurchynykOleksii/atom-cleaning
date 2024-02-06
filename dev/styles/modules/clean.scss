@@ -4,6 +4,35 @@
   padding-top: 70px;
   padding-bottom: 60px;
 
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include minw($lg-custom) {
+      display: none;
+    }
+  }
+
+  &__item {
+    p {
+      margin-bottom: 5px;
+      font-family: Kalam;
+      font-size: 22px;
+      font-weight: 400;
+      text-align: center;
+      color: $colorGray;
+    }
+  }
+
+  .swiper.clean__swiper {
+    display: none;
+
+    @include minw($lg-custom) {
+      display: block;
+    }
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
     @extend %absVertAlign;

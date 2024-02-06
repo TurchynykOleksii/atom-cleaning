@@ -68,6 +68,11 @@
   gap: 24px;
 }
 .cleaners__item {
-  border-radius: 40px;
+  border-radius: 0 0 30px 30px;
   overflow: hidden;
+}
+@media only screen and (min-width: 1588px) {
+  .cleaners__item {
+    border-radius: 40px;
+  }
 }

@@ -110,6 +110,7 @@
 
 		@include minw($lg-custom) {
 			flex-direction: row;
+			align-items: baseline;
 			gap: 150px;
 		}
 	}

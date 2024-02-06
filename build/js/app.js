@@ -8,6 +8,44 @@ const tabsBtnsEl = document.querySelectorAll(".services__btn");
 const tabsTabInfoEl = document.querySelectorAll(".services__item");
 let activeTabBtnEl = null;
 let activeTabEl = null;
+const burgerEl = document.querySelector(".header__burger-btn");
+const mobileMenuEl = document.querySelector(".mobile__wrap");
+const lessMoreBtnEl = document.querySelectorAll(".services__more");
+const showChar = 643;
+
+burgerEl.addEventListener("click", () => {
+  mobileMenuEl.classList.toggle("show-menu");
+  if (mobileMenuEl.classList.contains("show-menu")) {
+    mobileMenuEl.style.top = "0";
+  } else {
+    mobileMenuEl.style.top = "-100%";
+  }
+});
+
+function showLessText(text) {
+  let moreText = text.textContent.slice(0, showChar);
+  let lessText = text.textContent.slice(showChar);
+
+  return [moreText, lessText];
+}
+lessMoreBtnEl.forEach((btn) => {
+  let res = showLessText(btn.previousElementSibling);
+  const [moreText, lessText] = res;
+  btn.previousElementSibling.classList.add("hide-text");
+  btn.previousElementSibling.innerHTML = `${moreText}...`;
+
+  btn.addEventListener("click", () => {
+    if (!btn.previousElementSibling.classList.contains("hide-text")) {
+      btn.textContent = "...more";
+      btn.previousElementSibling.classList.add("hide-text");
+      btn.previousElementSibling.innerHTML = `${moreText}...`;
+    } else {
+      btn.textContent = "...less";
+      btn.previousElementSibling.classList.remove("hide-text");
+      btn.previousElementSibling.innerHTML = `${moreText}${lessText}`;
+    }
+  });
+});
 
 tabsBtnsEl[0].classList.add("services__btn--active");
 tabsTabInfoEl[0].classList.add("services__item--active");

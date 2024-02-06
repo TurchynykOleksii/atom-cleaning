@@ -9,6 +9,17 @@ const swiper = new Swiper(".clean__inner .swiper", {
   autoHeight: true,
 });
 
+const servicesSwiper = new Swiper(".services__swiper", {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 20,
+});
+const aboutSwiper = new Swiper(".about-works", {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 20,
+});
+
 const swiperReview = new Swiper(".swiper.reviews__swiper", {
   effect: "coverflow",
   grabCursor: true,

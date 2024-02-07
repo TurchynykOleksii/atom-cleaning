@@ -28,6 +28,10 @@
 	&__burger-btn {
 		border: none;
 
+		&:hover {
+			cursor: pointer;
+		}
+
 		@include minw($lg-custom) {
 			display: none;
 		}
@@ -64,7 +68,11 @@
 			font-weight: 400;
 			font-family: SFProDisplay;
 			color: #594C42;
+			transition: color 250ms ease;
 
+			&:hover {
+				color: $colorAccentText;
+			}
 
 
 			@include minw($lg-custom) {
@@ -99,8 +107,20 @@
 			font-size: 34px;
 		}
 
+		&:hover {
+			svg {
+				stroke: $colorAccentText;
+			}
+
+
+			span {
+				color: $colorAccentText;
+			}
+		}
+
 		span {
 			color: #594C42;
+			transition: color 250ms ease;
 
 			@include minw($lg-custom) {
 				color: #594C42;

@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ATOM Cleaning</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css?_v=20240207173518">
 	<link rel="Shortcut Icon" type="image/x-icon" href="img/general/favicon.png" />
-	<link rel="stylesheet" href="css/libs/swiper.css">
+	<link rel="stylesheet" href="css/libs/swiper.css?_v=20240207173518">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 					</svg>
 				</button>
 				<a href="#" class="header__logo">
-					<img src="../img/general/logo.png" alt="logotype">
+					<picture><source srcset="../img/general/logo.webp" type="image/webp"><img src="../img/general/logo.png" alt="logotype"></picture>
 				</a>
 				<a href="tel:14161234567" class="header__mobile-phone">
 					<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,9 +43,7 @@
 					</ul>
 				</nav>
 				<a href="#" class="header__phone">
-					<svg width="44" height="44" aria-label="icon phone">
-						<use class="header__phone-icon" href="../img/icons/sprite.svg#icon-phone-icon"></use>
-					</svg>
+					<img src="../img/icons/phone-icon.svg" width="44" height="44" alt="phone icon">
 					<span>1-416-123-4567</span>
 				</a>
 			</div>
@@ -56,33 +54,35 @@
 
 <section class="hero">
   <div class="hero__img">
-    <img src="../img/general/hero.jpg" alt="photo cleaning process">
+    <picture><source srcset="../img/general/hero.webp" type="image/webp"><img src="../img/general/hero.jpg" alt="photo cleaning process"></picture>
   </div>
   <div class="mobile__wrap">
-    <ul class="mobile__menu">
-      <li class="mobile__menu-item">
-        <a href="#">Services</a>
-      </li>
-      <li class="mobile__menu-item">
-        <a href="#">Our Teem</a>
-      </li>
-      <li class="mobile__menu-item">
-        <a href="#">Location</a>
-      </li>
-      <li class="mobile__menu-item">
-        <a href="#">Contact Us</a>
-      </li>
-    </ul>
+    <div class="wrapper">
+      <ul class="mobile__menu">
+        <li class="mobile__menu-item">
+          <a href="#">Services</a>
+        </li>
+        <li class="mobile__menu-item">
+          <a href="#">Our Teem</a>
+        </li>
+        <li class="mobile__menu-item">
+          <a href="#">Location</a>
+        </li>
+        <li class="mobile__menu-item">
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="wrapper">
     <div class="hero__inner">
       <div class="hero__info">
         <h1 class="hero__title">
           ATOM
-          <p class="hero__text">
+          <div class="hero__text">
             Cleaning Services
             <span>Your trusted cleaning partner</span>
-          </p>
+          </div>
         </h1>
 
         <button class="hero__btn">Get a Quate</button>
@@ -97,7 +97,7 @@
       <ul class="about-works__list">
         <li class="about-works__item">
           <div class="about-works__img">
-            <img src="../img/general/works1.jpg" width="310" height="310" alt="photo how it works">
+            <picture><source srcset="../img/general/works1.webp" type="image/webp"><img src="../img/general/works1.jpg" width="310" height="310" alt="photo how it works"></picture>
           </div>
           <h3>A team of professionals</h3>
           <p>
@@ -106,7 +106,7 @@
         </li>
         <li class="about-works__item">
           <div class="about-works__img">
-            <img src="../img/general/works2.jpg" width="310" height="310" alt="photo how it works">
+            <picture><source srcset="../img/general/works2.webp" type="image/webp"><img src="../img/general/works2.jpg" width="310" height="310" alt="photo how it works"></picture>
           </div>
           <h3>Individual approach</h3>
           <p>
@@ -115,7 +115,7 @@
         </li>
         <li class="about-works__item">
           <div class="about-works__img">
-            <img src="../img/general/works3.jpg" width="310" height="310" alt="photo how it works">
+            <picture><source srcset="../img/general/works3.webp" type="image/webp"><img src="../img/general/works3.jpg" width="310" height="310" alt="photo how it works"></picture>
           </div>
           <h3>Modern equipment</h3>
           <p>
@@ -124,7 +124,7 @@
         </li>
         <li class="about-works__item">
           <div class="about-works__img">
-            <img src="../img/general/works4.jpg" width="310" height="310" alt="photo how it works">
+            <picture><source srcset="../img/general/works4.webp" type="image/webp"><img src="../img/general/works4.jpg" width="310" height="310" alt="photo how it works"></picture>
           </div>
           <h3>Payment</h3>
           <p>
@@ -132,13 +132,13 @@
           </p>
         </li>
       </ul>
-      <div class="swiper about-works">
+      <div class="swiper about-works__slider">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide about-works__item">
             <div class="about-works__img">
-              <img src="../img/general/works1.jpg" width="310" height="310" alt="photo how it works">
+              <picture><source srcset="../img/general/works1.webp" type="image/webp"><img src="../img/general/works1.jpg" width="310" height="310" alt="photo how it works"></picture>
             </div>
             <h3>A team of professionals</h3>
             <p>
@@ -147,7 +147,7 @@
           </div>
           <div class="swiper-slide about-works__item">
             <div class="about-works__img">
-              <img src="../img/general/works2.jpg" width="310" height="310" alt="photo how it works">
+              <picture><source srcset="../img/general/works2.webp" type="image/webp"><img src="../img/general/works2.jpg" width="310" height="310" alt="photo how it works"></picture>
             </div>
             <h3>Individual approach</h3>
             <p>
@@ -156,7 +156,7 @@
           </div>
           <div class="swiper-slide about-works__item">
             <div class="about-works__img">
-              <img src="../img/general/works3.jpg" width="310" height="310" alt="photo how it works">
+              <picture><source srcset="../img/general/works3.webp" type="image/webp"><img src="../img/general/works3.jpg" width="310" height="310" alt="photo how it works"></picture>
             </div>
             <h3>Modern equipment</h3>
             <p>
@@ -165,7 +165,7 @@
           </div>
           <div class="swiper-slide about-works__item">
             <div class="about-works__img">
-              <img src="../img/general/works4.jpg" width="310" height="310" alt="photo how it works">
+              <picture><source srcset="../img/general/works4.webp" type="image/webp"><img src="../img/general/works4.jpg" width="310" height="310" alt="photo how it works"></picture>
             </div>
             <h3>Payment</h3>
             <p>
@@ -173,7 +173,9 @@
               completed.
             </p>
           </div>
+
         </div>
+        <div class="about-pagination"></div>
       </div>
     </div>
   </div>
@@ -195,7 +197,7 @@
         </ul>
         <ul class="services__tab">
           <li class="services__item services__item--active">
-            <img src="../img/general/tab1.png" alt="services photo">
+            <picture><source srcset="../img/general/tab1.webp" type="image/webp"><img src="../img/general/tab1.png" alt="services photo"></picture>
             <div class="services__info">
               <span>General</span>
               <p>
@@ -229,7 +231,7 @@
             </div>
           </li>
           <li class="services__item">
-            <img src="../img/general/tab2.png" alt="services photo">
+            <picture><source srcset="../img/general/tab2.webp" type="image/webp"><img src="../img/general/tab2.png" alt="services photo"></picture>
             <div class="services__info">
               <span>Airbnb</span>
               <p>
@@ -255,7 +257,7 @@
             </div>
           </li>
           <li class="services__item">
-            <img src="../img/general/tab3.png" alt="services photo">
+            <picture><source srcset="../img/general/tab3.webp" type="image/webp"><img src="../img/general/tab3.png" alt="services photo"></picture>
             <div class="services__info">
               <span>Office</span>
               <p>
@@ -278,7 +280,7 @@
             </div>
           </li>
           <li class="services__item">
-            <img src="../img/general/tab4.png" alt="services photo">
+            <picture><source srcset="../img/general/tab4.webp" type="image/webp"><img src="../img/general/tab4.png" alt="services photo"></picture>
             <div class="services__info">
               <span>Move In Move Out</span>
               <p>
@@ -306,7 +308,7 @@
             </div>
           </li>
           <li class="services__item">
-            <img src="../img/general/tab5.png" alt="services photo">
+            <picture><source srcset="../img/general/tab5.webp" type="image/webp"><img src="../img/general/tab5.png" alt="services photo"></picture>
             <div class="services__info">
               <span>Deep Cleaning</span>
               <p>
@@ -333,7 +335,7 @@
             </div>
           </li>
           <li class="services__item">
-            <img src="../img/general/tab6.png" alt="services photo">
+            <picture><source srcset="../img/general/tab6.webp" type="image/webp"><img src="../img/general/tab6.png" alt="services photo"></picture>
             <div class="services__info">
               <span>After Construction</span>
               <p>
@@ -362,7 +364,7 @@
             </div>
           </li>
           <li class="services__item">
-            <img src="../img/general/tab7.png" alt="services photo">
+            <picture><source srcset="../img/general/tab7.webp" type="image/webp"><img src="../img/general/tab7.png" alt="services photo"></picture>
             <div class="services__info">
               <span>Other</span>
               <p>
@@ -393,7 +395,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide services__slide">
-            <img src="../img/general/tab2.png" alt="services photo">
+            <picture><source srcset="../img/general/tab2.webp" type="image/webp"><img src="../img/general/tab2.png" alt="services photo"></picture>
             <div class="services__swiper-info open">
               <span>General</span>
               <p class="text ">
@@ -420,7 +422,7 @@
             </div>
           </div>
           <div class="swiper-slide services__slide">
-            <img src="../img/general/tab2.png" alt="services photo">
+            <picture><source srcset="../img/general/tab2.webp" type="image/webp"><img src="../img/general/tab2.png" alt="services photo"></picture>
             <div class="services__swiper-info ">
               <span>Airbnb</span>
               <p class="text">
@@ -447,7 +449,7 @@
             </div>
           </div>
           <div class="swiper-slide services__slide">
-            <img src="../img/general/tab3.png" alt="services photo">
+            <picture><source srcset="../img/general/tab3.webp" type="image/webp"><img src="../img/general/tab3.png" alt="services photo"></picture>
             <div class="services__swiper-info">
               <span>Office</span>
               <p class="text">
@@ -474,7 +476,7 @@
             </div>
           </div>
           <div class="swiper-slide services__slide">
-            <img src="../img/general/tab4.png" alt="services photo">
+            <picture><source srcset="../img/general/tab4.webp" type="image/webp"><img src="../img/general/tab4.png" alt="services photo"></picture>
             <div class="services__swiper-info">
               <span>Move In Move Out</span>
               <p class="text">
@@ -501,7 +503,7 @@
             </div>
           </div>
           <div class="swiper-slide services__slide">
-            <img src="../img/general/tab5.png" alt="services photo">
+            <picture><source srcset="../img/general/tab5.webp" type="image/webp"><img src="../img/general/tab5.png" alt="services photo"></picture>
             <div class="services__swiper-info">
               <span>Deep Cleaning</span>
               <p class="text">
@@ -528,7 +530,7 @@
             </div>
           </div>
           <div class="swiper-slide services__slide">
-            <img src="../img/general/tab6.png" alt="services photo">
+            <picture><source srcset="../img/general/tab6.webp" type="image/webp"><img src="../img/general/tab6.png" alt="services photo"></picture>
             <div class="services__swiper-info">
               <span>After Construction</span>
               <p class="text">
@@ -555,7 +557,7 @@
             </div>
           </div>
           <div class="swiper-slide services__slide">
-            <img src="../img/general/tab7.png" alt="services photo">
+            <picture><source srcset="../img/general/tab7.webp" type="image/webp"><img src="../img/general/tab7.png" alt="services photo"></picture>
             <div class="services__swiper-info">
               <span>Other</span>
               <p class="text">
@@ -582,6 +584,7 @@
             </div>
           </div>
         </div>
+        <div class="services-pagination"></div>
       </div>
     </div>
   </div>
@@ -608,7 +611,7 @@
             <div class="clean__slider-wrapper">
               <p>Kitchen</p>
               <div class="clean__swiper-img">
-                <img src="../img/general/slider1.png" alt="our works photo">
+                <picture><source srcset="../img/general/slider1.webp" type="image/webp"><img src="../img/general/slider1.png" alt="our works photo"></picture>
               </div>
             </div>
           </div>
@@ -616,7 +619,7 @@
             <div class="clean__slider-wrapper">
               <p>Bathroom</p>
               <div class="clean__swiper-img">
-                <img src="../img/general/slider2.png" alt="our works photo">
+                <picture><source srcset="../img/general/slider2.webp" type="image/webp"><img src="../img/general/slider2.png" alt="our works photo"></picture>
               </div>
             </div>
           </div>
@@ -624,7 +627,7 @@
             <div class="clean__slider-wrapper">
               <p>Living room</p>
               <div class="clean__swiper-img">
-                <img src="../img/general/slider3.png" alt="our works photo">
+                <picture><source srcset="../img/general/slider3.webp" type="image/webp"><img src="../img/general/slider3.png" alt="our works photo"></picture>
               </div>
             </div>
           </div>
@@ -632,7 +635,7 @@
             <div class="clean__slider-wrapper">
               <p>Bad room</p>
               <div class="clean__swiper-img">
-                <img src="../img/general/slider4.png" alt="our works photo">
+                <picture><source srcset="../img/general/slider4.webp" type="image/webp"><img src="../img/general/slider4.png" alt="our works photo"></picture>
               </div>
             </div>
           </div>
@@ -642,25 +645,25 @@
         <li class="clean__item">
           <p>Kitchen</p>
           <div class="clean__swiper-img">
-            <img src="../img/general/slider1.png" alt="our works photo">
+            <picture><source srcset="../img/general/slider1.webp" type="image/webp"><img src="../img/general/slider1.png" alt="our works photo"></picture>
           </div>
         </li>
         <li class="clean__item">
           <p>Bathroom</p>
           <div class="clean__swiper-img">
-            <img src="../img/general/slider2.png" alt="our works photo">
+            <picture><source srcset="../img/general/slider2.webp" type="image/webp"><img src="../img/general/slider2.png" alt="our works photo"></picture>
           </div>
         </li>
         <li class="clean__item">
           <p>Living room</p>
           <div class="clean__swiper-img">
-            <img src="../img/general/slider3.png" alt="our works photo">
+            <picture><source srcset="../img/general/slider3.webp" type="image/webp"><img src="../img/general/slider3.png" alt="our works photo"></picture>
           </div>
         </li>
         <li class="clean__item">
           <p>Bad room</p>
           <div class="clean__swiper-img">
-            <img src="../img/general/slider4.png" alt="our works photo">
+            <picture><source srcset="../img/general/slider4.webp" type="image/webp"><img src="../img/general/slider4.png" alt="our works photo"></picture>
           </div>
         </li>
       </ul>
@@ -703,16 +706,16 @@
         </div>
         <ul class="cleaners__list">
           <li class="cleaners__item">
-            <img src="../img/general/team1.jpg" alt="photo team people">
+            <picture><source srcset="../img/general/team1.webp" type="image/webp"><img src="../img/general/team1.jpg" alt="photo team people"></picture>
           </li>
           <li class="cleaners__item cleaners__hide">
-            <img src="../img/general/team2.jpg" alt="photo team people">
+            <picture><source srcset="../img/general/team2.webp" type="image/webp"><img src="../img/general/team2.jpg" alt="photo team people"></picture>
           </li>
           <li class="cleaners__item cleaners__hide">
-            <img src="../img/general/team3.jpg" alt="photo team people">
+            <picture><source srcset="../img/general/team3.webp" type="image/webp"><img src="../img/general/team3.jpg" alt="photo team people"></picture>
           </li>
           <li class="cleaners__item cleaners__hide">
-            <img src="../img/general/team4.jpg" alt="photo team people">
+            <picture><source srcset="../img/general/team4.webp" type="image/webp"><img src="../img/general/team4.jpg" alt="photo team people"></picture>
           </li>
         </ul>
       </div>
@@ -729,7 +732,7 @@
           We Clean, You Relax – A Spotless Impact!
         </p>
         <div class="map__img">
-          <img src="../img/general/map.png" alt="map photo">
+          <picture><source srcset="../img/general/map.webp" type="image/webp"><img src="../img/general/map.png" alt="map photo"></picture>
         </div>
         <div class="map__info">
           <h6 class="map__headline">Location of our service</h6>
@@ -766,7 +769,7 @@
       <h6 class="contacts__title section-title">Contact Us</h6>
       <div class="contacts__main">
         <div class="contacts__img">
-          <img src="../img/general/contacts.jpg" alt="photo cleaning ">
+          <picture><source srcset="../img/general/contacts.webp" type="image/webp"><img src="../img/general/contacts.jpg" alt="photo cleaning "></picture>
         </div>
         <form class="contacts__form">
           <span class="contacts__headline">Get a Quote</span>
@@ -819,35 +822,25 @@
             </p>
             <div class="reviews__client">
               <div class="reviews__photo">
-                <img src="../img/general/slider-kelly.png" alt="Kelly Dail client photo ">
+                <picture><source srcset="../img/general/slider-kelly.webp" type="image/webp"><img src="../img/general/slider-kelly.png" alt="Kelly Dail client photo "></picture>
               </div>
               <div class="reviews__feedback">
                 <span class="reviews__name">Kelly Dail</span>
                 <ul class="reviews__list">
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                 </ul>
               </div>
@@ -869,35 +862,25 @@
             </p>
             <div class="reviews__client">
               <div class="reviews__photo">
-                <img src="../img/general/slider-arlene.png" alt="Arlene client photo ">
+                <picture><source srcset="../img/general/slider-arlene.webp" type="image/webp"><img src="../img/general/slider-arlene.png" alt="Arlene client photo "></picture>
               </div>
               <div class="reviews__feedback">
                 <span class="reviews__name">Arlene Wagner</span>
                 <ul class="reviews__list">
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                 </ul>
               </div>
@@ -918,35 +901,25 @@
             </p>
             <div class="reviews__client">
               <div class="reviews__photo">
-                <img src="../img/general/slider-beth.png" alt="Beth Vastardis client photo ">
+                <picture><source srcset="../img/general/slider-beth.webp" type="image/webp"><img src="../img/general/slider-beth.png" alt="Beth Vastardis client photo "></picture>
               </div>
               <div class="reviews__feedback">
                 <span class="reviews__name">Beth Vastardis</span>
                 <ul class="reviews__list">
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                   <li class="reviews__item">
-                    <svg width="24" height="24" aria-label="star photo with client feedback">
-                      <use class="icon__crose" href="../img/icons/sprite.svg#icon-star-icon"></use>
-                    </svg>
+                    <img src="../img/icons/star-icon.svg" width="24" height="24" alt="star icon">
                   </li>
                 </ul>
               </div>
@@ -972,7 +945,7 @@
             </p>
             <div class="reviews__client">
               <div class="reviews__photo">
-                <img src="../img/general/slider-kelly.png" alt="Kelly Dail client photo ">
+                <picture><source srcset="../img/general/slider-kelly.webp" type="image/webp"><img src="../img/general/slider-kelly.png" alt="Kelly Dail client photo "></picture>
               </div>
               <div class="reviews__feedback">
                 <span class="reviews__name">Kelly Dail</span>
@@ -1022,7 +995,7 @@
             </p>
             <div class="reviews__client">
               <div class="reviews__photo">
-                <img src="../img/general/slider-arlene.png" alt="Arlene client photo ">
+                <picture><source srcset="../img/general/slider-arlene.webp" type="image/webp"><img src="../img/general/slider-arlene.png" alt="Arlene client photo "></picture>
               </div>
               <div class="reviews__feedback">
                 <span class="reviews__name">Arlene Wagner</span>
@@ -1071,7 +1044,7 @@
             </p>
             <div class="reviews__client">
               <div class="reviews__photo">
-                <img src="../img/general/slider-beth.png" alt="Beth Vastardis client photo ">
+                <picture><source srcset="../img/general/slider-beth.webp" type="image/webp"><img src="../img/general/slider-beth.png" alt="Beth Vastardis client photo "></picture>
               </div>
               <div class="reviews__feedback">
                 <span class="reviews__name">Beth Vastardis</span>
@@ -1106,16 +1079,13 @@
             </div>
           </div>
         </div>
+        <div class="reviews-pagination"></div>
       </div>
       <div class="swiper-button-prev">
-        <svg width="30" height="30" aria-label="slider arrow left">
-          <use class="icon__crose" href="../img/icons/sprite.svg#icon-arrow-left-icon"></use>
-        </svg>
+        <img src="../img/icons/arrow-left-icon.svg" width="30" height="30" alt="arrow icon">
       </div>
       <div class="swiper-button-next">
-        <svg width="30" height="30" aria-label="slider arrow right">
-          <use class="icon__crose" href="../img/icons/sprite.svg#icon-arrow-right-icon"></use>
-        </svg>
+        <img src="../img/icons/arrow-right-icon.svg" width="30" height="30" alt="arrow icon">
       </div>
     </div>
   </div>
@@ -1149,30 +1119,22 @@
 					<ul class="footer__social">
 						<li class="footer__item">
 							<a href="#">
-								<svg width="40" height="40" aria-label="icon link facebook">
-									<use class="header__phone-icon" href="../img/icons/sprite.svg#icon-facebook-icon"></use>
-								</svg>
+								<img src="../img/icons/facebook-icon.svg" width="40" height="40" alt="facebook icon">
 							</a>
 						</li>
 						<li class="footer__item">
 							<a href="#">
-								<svg width="40" height="40" aria-label="icon link instagram">
-									<use class="header__phone-icon" href="../img/icons/sprite.svg#icon-instagram-icon"></use>
-								</svg>
+								<img src="../img/icons/instagram-icon.svg" width="40" height="40" alt="instagram icon">
 							</a>
 						</li>
 						<li class="footer__item">
 							<a href="#">
-								<svg width="40" height="40" aria-label="icon link whatsup">
-									<use class="header__phone-icon" href="../img/icons/sprite.svg#icon-whatsapp-icon"></use>
-								</svg>
+								<img src="../img/icons/whatsapp-icon.svg" width="40" height="40" alt="whatsup icon">
 							</a>
 						</li>
 						<li class="footer__item">
 							<a href="#">
-								<svg width="40" height="40" aria-label="icon link telegram">
-									<use class="header__phone-icon" href="../img/icons/sprite.svg#icon-telegram-icon"></use>
-								</svg>
+								<img src="../img/icons/telegram-icon.svg" width="40" height="40" alt="telegram icon">
 							</a>
 						</li>
 					</ul>
@@ -1192,38 +1154,30 @@
 					</ul>
 				</div>
 				<a href="#" class="footer__logo">
-					<img src="../img/general/logo__footer.png" alt="logotype" width="231" height="121">
+					<picture><source srcset="../img/general/logo__footer.webp" type="image/webp"><img src="../img/general/logo__footer.png" alt="logotype" width="231" height="121"></picture>
 				</a>
 				<div class="footer__contacts">
 					<h6 class="footer__contacts-headline">Contacts:</h6>
 					<ul class="footer__contacts-list">
 						<li class="footer__contacts-item">
 							<a href="#">
-								<svg width="36" height="36" aria-label="icon link adress">
-									<use class="footer__social-icon" href="../img/icons/sprite.svg#icon-location-icon"></use>
-								</svg>
+								<img src="../img/icons/location-icon.svg" width="36" height="36" alt="location icon">
 								209 Route 201418 Rigaud QC J0P 1P0 Canada
 							</a>
 						</li>
 						<li class="footer__contacts-item">
 							<a href="mailto:mail@mail.com">
-								<svg width="36" height="36" aria-label="icon link email">
-									<use class="footer__social-icon" href="../img/icons/sprite.svg#icon-mail-icon"></use>
-								</svg>
+								<img src="../img/icons/mail-icon.svg" width="36" height="36" alt="mail icon">
 								mail@mail.com</a>
 						</li>
 						<li class="footer__contacts-item">
 							<a href="tel:mail@mail.com">
-								<svg width="36" height="36" aria-label="icon link phone">
-									<use class="footer__social-icon" href="../img/icons/sprite.svg#icon-mobile-icon"></use>
-								</svg>
+								<img src="../img/icons/mobile-icon.svg" width="36" height="36" alt="mobile icon">
 								mail@mail.com
 							</a>
 						</li>
 						<li class="footer__contacts-item">
-							<svg width="36" height="36" aria-label="icon  time">
-								<use class="footer__social-icon" href="../img/icons/sprite.svg#icon-time-icon"></use>
-							</svg>
+							<img src="../img/icons/time-icon.svg" width="36" height="36" alt="time icon">
 							mail@mail.com
 						</li>
 					</ul>
@@ -1231,30 +1185,22 @@
 				<ul class="footer__social footer__mobile">
 					<li class="footer__item">
 						<a href="#">
-							<svg width="40" height="40" aria-label="icon link facebook">
-								<use class="header__phone-icon" href="../img/icons/sprite.svg#icon-facebook-icon"></use>
-							</svg>
+							<img src="../img/icons/facebook-icon.svg" width="40" height="40" alt="facebook icon">
 						</a>
 					</li>
 					<li class="footer__item">
 						<a href="#">
-							<svg width="40" height="40" aria-label="icon link instagram">
-								<use class="header__phone-icon" href="../img/icons/sprite.svg#icon-instagram-icon"></use>
-							</svg>
+							<img src="../img/icons/instagram-icon.svg" width="40" height="40" alt="instagram icon">
 						</a>
 					</li>
 					<li class="footer__item">
 						<a href="#">
-							<svg width="40" height="40" aria-label="icon link whatsup">
-								<use class="header__phone-icon" href="../img/icons/sprite.svg#icon-whatsapp-icon"></use>
-							</svg>
+							<img src="../img/icons/whatsapp-icon.svg" width="40" height="40" alt="whatsup icon">
 						</a>
 					</li>
 					<li class="footer__item">
 						<a href="#">
-							<svg width="40" height="40" aria-label="icon link telegram">
-								<use class="header__phone-icon" href="../img/icons/sprite.svg#icon-telegram-icon"></use>
-							</svg>
+							<img src="../img/icons/telegram-icon.svg" width="40" height="40" alt="telegram icon">
 						</a>
 					</li>
 				</ul>
@@ -1263,11 +1209,11 @@
 	</div>
 </footer>
 
-<script src="js/libs/jquery-3.6.0.min.js"></script>
+<script src="js/libs/jquery-3.6.0.min.js?_v=20240207173518"></script>
 
-<script src="js/libs/swiper-bundle.min.js"></script>
-<script src="js/modules/slider.js"></script>
-<script src="js/app.js" type="module"></script>
+<script src="js/libs/swiper-bundle.min.js?_v=20240207173518"></script>
+<script src="js/modules/slider.js?_v=20240207173518"></script>
+<script src="js/app.js?_v=20240207173518" type="module"></script>
 
 </body>
 

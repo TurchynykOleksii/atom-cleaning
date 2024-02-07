@@ -23,6 +23,21 @@
     }
   }
 
+  &__slider {
+
+
+    @include minw($lg-custom) {
+      display: none;
+    }
+
+    .about-pagination {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+
   &__item {
     max-width: 375px;
     width: 100%;
@@ -68,4 +83,20 @@
       box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
   }
+
+
+
+
+}
+
+.swiper-pagination-bullet {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: $colorHeader;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $colorSecondary;
 }

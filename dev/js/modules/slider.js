@@ -13,11 +13,17 @@ const servicesSwiper = new Swiper(".services__swiper", {
   slidesPerView: 1,
   loop: true,
   spaceBetween: 20,
+  pagination: {
+    el: ".services-pagination",
+  },
 });
-const aboutSwiper = new Swiper(".about-works", {
+const aboutSwiper = new Swiper(".about-works__slider", {
   slidesPerView: 1,
   loop: true,
   spaceBetween: 20,
+  pagination: {
+    el: ".about-pagination",
+  },
 });
 
 const swiperReview = new Swiper(".swiper.reviews__swiper", {
@@ -45,4 +51,7 @@ const swiperReviewMobile = new Swiper(".swiper.reviews__swiper-mobile", {
   slidesPerView: 1,
   loop: true,
   spaceBetween: 30,
+  pagination: {
+    el: ".reviews-pagination",
+  },
 });

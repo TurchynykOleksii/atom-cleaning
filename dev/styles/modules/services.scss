@@ -34,6 +34,7 @@
 
     img {
       width: 353px;
+      box-shadow: 2px 4px 15px 0 rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -60,14 +61,32 @@
   }
 
   &__swiper {
+    .services-pagination {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
     @include minw($lg-custom) {
       display: none;
     }
   }
 
+  .services__slide {
+    &:nth-child(2n) {
+      background-color: $colorSecondary;
+    }
+
+    &:nth-child(2n-1) {
+      background-color: #faeed1;
+    }
+  }
+
   &__swiper-info {
     padding: 25px 20px;
-    background-color: $colorSecondary;
+
+
 
 
     span {
@@ -90,6 +109,10 @@
     font-weight: 600;
     letter-spacing: 0.04em;
     color: #607274;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__item {

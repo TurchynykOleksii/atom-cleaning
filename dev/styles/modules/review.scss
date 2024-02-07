@@ -19,6 +19,15 @@
     @include minw($lg-custom) {
       display: block;
     }
+
+
+  }
+
+  .reviews-pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
 
   .swiper {

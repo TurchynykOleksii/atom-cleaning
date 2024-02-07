@@ -57,7 +57,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     color: #594c42;
     font-family: Kaisen;
     font-weight: 400;
@@ -90,6 +90,11 @@
     border-radius: 16px;
     box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.10);
     text-align: center;
+    transition: background-color 250ms ease;
+
+    &:hover {
+      background-color: #afc8ad;
+    }
   }
 }
 
@@ -104,10 +109,10 @@
   }
 
   &__menu {
-    max-width: 390px;
-    width: 100%;
+    max-width: 152px;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     background-color: #fff;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }

@@ -198,5 +198,10 @@
     font-weight: 500;
     background-color: $colorAccentText;
     text-align: center;
+    transition: background-color 250ms ease;
+
+    &:hover {
+      background-color: #afc8ad;
+    }
   }
 }
